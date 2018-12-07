@@ -1,7 +1,7 @@
 # Look for: ${my.value}
 version: "2.1"
 services:
-  resource-filtering:
+  maven-resource-filtering:
     build: .
     environment:
       MY_VALUE: ${my.value}

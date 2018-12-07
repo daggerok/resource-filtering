@@ -1,0 +1,7 @@
+# Look for: @my.value@
+version: "2.1"
+services:
+  gradle-resource-filtering:
+    build: .
+    environment:
+      MY_VALUE: @myValue@

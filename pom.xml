@@ -44,8 +44,7 @@
           <overwrite>true</overwrite>
           <nonFilteredFileExtensions>
             <nonFilteredFileExtension>do-not-filter-me</nonFilteredFileExtension>
-            <nonFilteredFileExtension>pdf</nonFilteredFileExtension>
-            <nonFilteredFileExtension>bin</nonFilteredFileExtension>
+            <nonFilteredFileExtension>yaml</nonFilteredFileExtension>
           </nonFilteredFileExtensions>
         </configuration>
       </plugin>

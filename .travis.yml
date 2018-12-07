@@ -12,10 +12,7 @@ addons:
   apt:
     packages:
     - bash
-    - curl
 
 install: true
-
 script:
-- export root=$(pwd)
-- bash test.sh
+- ./test.sh

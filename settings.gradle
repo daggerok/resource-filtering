@@ -1,0 +1,2 @@
+rootProject.name = 'resource-filtering'
+include 'docs'

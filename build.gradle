@@ -1,0 +1,23 @@
+plugins {
+  id 'java'
+}
+
+wrapper {
+  gradleVersion = '5.0'
+  distributionType = 'BIN'
+}
+
+processResources {
+  from('./src/main/docker/gradle') {
+    include('**/Dockerfile')
+    // include('**/*.yaml')
+  }
+  filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+      'myValue': project.property('my.value'),
+      'my.value': project.property('myValue'),
+  ]
+}
+
+assemble.dependsOn processResources
+
+defaultTasks 'clean', 'assemble'
